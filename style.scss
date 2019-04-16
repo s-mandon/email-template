@@ -49,10 +49,23 @@ table {
     background-color: $blackcolor;
     height: 400px;
     width: 50%;
+    color: white;
 }
 
 .right-section {
     background-color: $primarycolor;
     width: 50%;
+    color: white;
+}
+
+.ford-pass {
+   background-color: #355e81;
+   color: #fff;
+   text-transform: uppercase;
+}
+
+.footer {
+    background-color: $blackcolor;
+    color: #fff;
 }
 

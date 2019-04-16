@@ -35,10 +35,21 @@ table {
 .left-section {
   background-color: #1b1c1e;
   height: 400px;
-  width: 50%; }
+  width: 50%;
+  color: white; }
 
 .right-section {
   background-color: #1a4a8a;
-  width: 50%; }
+  width: 50%;
+  color: white; }
+
+.ford-pass {
+  background-color: #355e81;
+  color: #fff;
+  text-transform: uppercase; }
+
+.footer {
+  background-color: #1b1c1e;
+  color: #fff; }
 
 
