@@ -1,126 +1,249 @@
 <!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
-    
-    <title>Email</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="x-apple-disable-message-reformatting">  
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title></title> 
+
+    <style>
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* What it does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        /* What it does: Fixes webkit padding issue. */
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+            -ms-interpolation-mode:bicubic;
+        }
+
+        /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+        a {
+            text-decoration: none;
+        }
+
+        /* What it does: A work-around for email clients meddling in triggered links. */
+        a[x-apple-data-detectors],  /* iOS */
+        .unstyle-auto-detected-links a,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+        .a6S {
+            display: none !important;
+            opacity: 0.01 !important;
+        }
+
+        /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+        .im {
+            color: inherit !important;
+        }
+
+        /* If the above doesn't work, add a .g-img class to any image in question. */
+        img.g-img + div {
+            display: none !important;
+        }
+
+        /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+        @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+            u ~ div .email-container {
+                min-width: 320px !important;
+            }
+        }
+        /* iPhone 6, 6S, 7, 8, and X */
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+            u ~ div .email-container {
+                min-width: 375px !important;
+            }
+        }
+        /* iPhone 6+, 7+, and 8+ */
+        @media only screen and (min-device-width: 414px) {
+            u ~ div .email-container {
+                min-width: 414px !important;
+            }
+
+            /* Media Queries */
+	    @media screen and (max-width: 600px) {
+            .email-container p {
+                font-size: 17px !important;
+            }
+        }
+    }
+</style>
 </head>
-<body>
 
+<body> 
     <div class="email-background">
+    <div class="email-container">
+        <table class="header">
+            <tr>
+                <td class="logo"><img src="#" alt="haynes-logo"></td>
+                <td class="location"><p>Haynes Ford of Maidstone</p></td>         
+            </tr>
+        </table>
+        <table class="banner">
+            <tr>
+                <td>
+                    <img src="#" alt="banner">
+                    <h1>Your New FORD vehicle will be ready soon</h1>
+                </td>
+            </tr>
+        </table>
+        <table class="main">
+            <tr>
+                <td class="left-section">
+                    <img src="#" alt="gear-stick">
+                    <h2>Part Exchange?</h2>
+                    <p>Please remember to bring with you the following:</p>
+                    <ul>
+                        <li>Current registration document (V5c)
+                        <br>(IMPORTANT) - By law we cannot accept a
+                        part exchange without a current V5c.</li>
+                        <li>MOT certificate (if applicable)</li>
+                        <li>Service history</li>
+                        <li>All keys</li>
+                        <li>Locking wheel nut key</li>
+                    </ul>
+                    <p>Your sales executive will complete an online
+                    notification to DVLA to advise of the transfer
+                    of the part exchange vehicle to us. Please do not
+                    contact DVLA yourself prior to bringing in your car
+                    to us.</p>
+                </td>
+                <td class="right-section">
+                    <img src="#" alt="ford-car">
+                    <h2>FORD Pass</h2>
+                    <p>This fantastic new app assists with the 
+                    management of your vehicle, covering areas such as:</p>
+                    <ul>
+                        <li>Saving your dealership to your phone for
+                        quicker contact.</li>
+                        <li>Live news and traffic updates</li>
+                        <li>Quick find parking near you</li>
+                        <li>Link with Ford Credit</li>
+                        <li>Service bookings</li>
+                        <li>And many more</li>
+                    </ul>
+                    <p>If you would like to feel the benefits of
+                        this app, please follow the link below where you
+                        will find more information.</p>
+                </td>
+            </tr>
+        </table>
+        <table class="heritage">
+            <tr>
+                <td class="ford-pass"><h1>www.fordpass.co.uk</h1></td>
+            </tr>
+            <tr>
+                <td><p>Once you have downloaded and followed the steps to
+                    create an account, your sales executive can further advise
+                    you of the benefits of using this app when your arrive to
+                    pick up your new car.</p>
+                    <img src="#" alt="our-heritage">
+                    <p>Haynes of Maidstone is one of the very few family
+                        companies in the UK that has been in business over
+                        200 years. Therefore, you can be assured that your vehicle
+                        comes with a wealth of history and a multi award winning team
+                        behind it. To celebrate this history, we have produced a 
+                        quality enamel badge to display on your car, which yourself or
+                        one of the team can affix for you.
+                        <br>
+                        <br>
+                        Customers who proudly display this badge on their car will, in return,
+                        receive a 10% discount on any parts or accessories purchased from us.
+                        If this is of interest, please ask your sales executive for more details.
+                        <br>
+                        <br>
+                        See you very soon.
+                        <br>
+                        <br>
+                        <strong>Alex Hercock - Showroom Host</strong>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="#" alt="showroom">
+                <h1>Haynes Ford of Maidstone</h1>
+                <h2>23 Ashford Road ME14 5DQ</h2>
+                    <p>www.haynesford.co.uk</p>
+                </td>
+            </tr>
+        </table>
 
-    
-
-<div class="email-container">
-    <table class="header">
-        <tr>
-            <td class="logo"><img src="#" alt="haynes-logo"></td>
-            <td class="location"><p>Haynes Ford of Maidstone</p></td>         
-        </tr>
-    </table>
-    <table class="banner">
+        <!-- Email Footer : BEGIN -->
+    <table>
         <tr>
             <td>
-                <img src="#" alt="banner">
-                <h1>Your New FORD vehicle will be ready soon</h1>
             </td>
         </tr>
     </table>
-    <table class="main">
-        <tr>
-            <td class="left-section">
-                <img src="#" alt="gear-stick">
-                <h2>Part Exchange?</h2>
-                <p>Please remember to bring with you the folowing:</p>
-                <ul>
-                    <li>Current registration document (V5c)
-                    <br>(IMPORTANT) - By law we cannot accept a
-                    part exchange without a current V5c.</li>
-                    <li>MOT certificate (if applicable)</li>
-                    <li>Service history</li>
-                    <li>All keys</li>
-                    <li>Locking wheel nut key</li>
-                </ul>
-                <p>Your sales executive will complete an online
-                notification to DVLA to advise of the transfer
-                of the part exchange vehicle to us. Please do not
-                contact DVLA yourself prior to bringing in your car
-                to us.</p>
-            </td>
-            <td class="right-section">
-                <img src="#" alt="ford-car">
-                <h2>FORD Pass</h2>
-                <p>This fantastic new app assists with the 
-                management of your vehicle, covering areas such as:</p>
-                <ul>
-                    <li>Saving your dealership to your phone for
-                    quicker contact.</li>
-                    <li>Live news and traffic updates</li>
-                    <li>Quick find parking near you</li>
-                    <li>Link with Ford Credit</li>
-                    <li>Service bookings</li>
-                    <li>And many more</li>
-                </ul>
-                <p>If you would like to feel the benefits of
-                    this app, please follow the link below where you
-                    will find more information.</p>
-            </td>
-        </tr>
-    </table>
-    <table class="heritage">
-        <tr>
-            <td class="ford-pass"><h1>www.fordpass.co.uk</h1></td>
-        </tr>
-        <tr>
-            <td><p>Once you have downloaded and followed the steps to
-                create an account, your sales executive can further advise
-                you of the benefits of using this app when your arrive to
-                pick up your new car.</p>
-                <img src="#" alt="our-heritage">
-                <p>Haynes of Maidstone is one of the very few family
-                    companies in the UK that has been in business over
-                    200 years. Therefore, you can be assured that your vehicle
-                    comes with a wealth of history and a multi award winning team
-                    behind it. To celebrate this history, we have produced a 
-                    quality enamel badge to display on your car, which yourself or
-                    one of the team can affix for you.
-                    <br>
-                    <br>
-                    Customers who proudly display this badge on their car will, in return,
-                    receive a 10% discount on any parts or accessories purchased from us.
-                    If this is of interest, please ask your sales executive for more details.
-                    <br>
-                    <br>
-                    See you very soon.
-                    <br>
-                    <br>
-                    <strong>Alex Hercock - Showroom Host</strong>
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td><img src="#" alt="showroom">
-            <h1>Haynes Ford of Maidstone</h1>
-            <h2>23 Ashford Road ME14 5DQ</h2>
-             <p>www.haynesford.co.uk</p></td>
-        </tr>
-    </table>
-    <table class="footer">
-        <tr>
-            <td><p>Social media</p></td>
-        </tr>
-        <tr>
-            <td><p>Calls may be recorded for training and quality purposes.
-                You are receiving this email because you opted in to receive
-                information from Haynes Ford either via the website, in a showroom or
-                when you purchased your vehicle. If you no longer wish to receive email
-                communications from us please click the link at the top of the email to 
-                unsubscribe instantly. Privacy policy. Our postal address and registered office
-                is Haynes House 23 Ashford Road, Maidstone, Kent, ME145DQ. Registered in England.
-                Our company resgistration number is: 00048511. 25089.
-            </p></td>
-        </tr>
-    </table>
-    </div> <!--email-container end-->
+</div>
+
+<!-- Full Bleed Background Section : BEGIN -->
+<table class="footer">
+    <tr>
+        <td>
+            <div class="email-container">
+                <table class="footer">
+                    <tr>
+                        <td> 
+                            <a href="#">Social media icons</a>
+                            <p>Calls may be recorded for training and quality purposes. 
+                                You are receiving this email because you opted in to receive 
+                                information from Haynes Ford either via the website, in a showroom 
+                                or when you purchased your vehicle. If you no longer wish to receive 
+                                email communications from us please click the link at the top of the 
+                                email to unsubscribe instantly. Privacy policy. Our postal address 
+                                and registered office is Haynes House 23 Ashford Road, Maidstone, 
+                                Kent, ME145DQ. Registered in England. Our company resgistration 
+                                number is: 00048511. 25089.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    </tr>
+</table>
+</div> <!--email-container end-->
 </div> <!--email-background end-->
 </body>
 </html>
