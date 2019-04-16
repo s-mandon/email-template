@@ -1,21 +1,17 @@
 .email-background {
-  background-color: #fff; }
+  background-color: #1b1c1e;
+  margin: 0 auto; }
 
 .email-container {
-  max-width: 700px;
+  max-width: 600px;
   color: #1b1c1e;
   background-color: #fff;
   height: auto;
   margin: 0 auto;
-  overflow: hidden;
-  border-radius: 5px; }
-
-img {
-  max-width: 50%; }
+  overflow: hidden; }
 
 .header {
-  background-color: #fff;
-  padding: 10px; }
+  background-color: #fff; }
 
 .logo {
   text-align: left; }
@@ -32,9 +28,12 @@ table {
   background-color: #1a4a8a;
   height: 200px; }
 
+.main {
+  height: 600px;
+  text-align: left; }
+
 .left-section {
   background-color: #1b1c1e;
-  height: 400px;
   width: 50%;
   color: white; }
 
