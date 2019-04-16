@@ -18,7 +18,8 @@ body {
     margin: 0 auto;
     overflow: hidden;
     font-family: helvetica;
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 .header {
@@ -81,6 +82,7 @@ table {
 }
 
 .footer {
+    font-size: 12px;
     background-color: $blackcolor;
     color: #fff;
     padding: 20px;
