@@ -37,10 +37,11 @@ table {
 .banner {
     background-color: $primarycolor;
     height: 200px;
+    color: #fff;
 }
 
 .main {
-    height: 600px;
+    height: auto;
     text-align: left;
 }
 
