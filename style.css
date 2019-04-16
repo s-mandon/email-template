@@ -1,5 +1,8 @@
+body {
+  margin: 0; }
+
 .email-background {
-  background-color: #1b1c1e;
+  background-color: #0e0e0e;
   margin: 0 auto; }
 
 .email-container {
@@ -8,10 +11,13 @@
   background-color: #fff;
   height: auto;
   margin: 0 auto;
-  overflow: hidden; }
+  overflow: hidden;
+  font-family: helvetica;
+  font-size: 16px; }
 
 .header {
-  background-color: #fff; }
+  background-color: #fff;
+  padding: 10px 20px; }
 
 .logo {
   text-align: left; }
@@ -29,6 +35,9 @@ table {
   height: 200px;
   color: #fff; }
 
+.banner h1 {
+  padding: 0px 100px; }
+
 .main {
   height: auto;
   text-align: left; }
@@ -36,20 +45,26 @@ table {
 .left-section {
   background-color: #1b1c1e;
   width: 50%;
-  color: white; }
+  color: white;
+  padding: 20px; }
 
 .right-section {
   background-color: #1a4a8a;
   width: 50%;
-  color: white; }
+  color: white;
+  padding: 20px; }
 
 .ford-pass {
   background-color: #355e81;
   color: #fff;
   text-transform: uppercase; }
 
+.heritage p {
+  padding: 10px 30px; }
+
 .footer {
   background-color: #1b1c1e;
-  color: #fff; }
+  color: #fff;
+  padding: 20px; }
 
 

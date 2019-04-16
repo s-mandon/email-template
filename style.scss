@@ -1,8 +1,12 @@
 $primarycolor: #1a4a8a;
 $blackcolor: #1b1c1e;
 
+body {
+    margin: 0;
+}
+
 .email-background {
-    background-color:$blackcolor;
+    background-color: #0e0e0e;
     margin: 0 auto;
 }
 
@@ -13,10 +17,13 @@ $blackcolor: #1b1c1e;
     height: auto;
     margin: 0 auto;
     overflow: hidden;
+    font-family: helvetica;
+    font-size: 16px;
 }
 
 .header {
     background-color: #fff;
+    padding: 10px 20px;
 }
 
 .logo {
@@ -40,6 +47,10 @@ table {
     color: #fff;
 }
 
+.banner h1 {
+    padding: 0px 100px;
+}
+
 .main {
     height: auto;
     text-align: left;
@@ -49,12 +60,14 @@ table {
     background-color: $blackcolor;
     width: 50%;
     color: white;
+    padding: 20px;
 }
 
 .right-section {
     background-color: $primarycolor;
     width: 50%;
     color: white;
+    padding: 20px;
 }
 
 .ford-pass {
@@ -63,8 +76,13 @@ table {
    text-transform: uppercase;
 }
 
+.heritage p {
+    padding: 10px 30px;
+}
+
 .footer {
     background-color: $blackcolor;
     color: #fff;
+    padding: 20px;
 }
 
