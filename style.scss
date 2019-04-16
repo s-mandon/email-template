@@ -5,15 +5,11 @@ $blackcolor: #1b1c1e;
     background-color: #fff;
 }
 
-header {
-    background-color: #fff;
-}
-
 .email-container {
     max-width: 700px;
     color: $blackcolor;
-    background-color: $primarycolor;
-    height: 500px;
+    background-color: #fff;
+    height: auto;
     margin: 0 auto;
     overflow: hidden;
     border-radius: 5px;
@@ -22,3 +18,41 @@ header {
 img {
     max-width: 50%;
 }
+
+.header {
+    background-color: #fff;
+    padding: 10px;
+}
+
+
+.logo {
+    text-align: left;
+}
+
+.location {
+    text-align: right;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 0px;
+    
+}
+
+.banner {
+    background-color: $primarycolor;
+    height: 200px;
+}
+
+.left-section {
+    background-color: $blackcolor;
+    height: 400px;
+    width: 50%;
+}
+
+.right-section {
+    background-color: $primarycolor;
+    width: 50%;
+}
+
