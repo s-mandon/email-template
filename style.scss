@@ -12,7 +12,7 @@ body {
 }
 
 .email-container {
-    width: 900px;
+    max-width: 900px;
     color: $blackcolor;
     background-color: #fff;
     height: auto;
@@ -30,31 +30,34 @@ body {
 
 .logo {
     text-align: left;
-    padding-left: 30px;
-    max-width: 250px;
-}
-
-.ford {
-    max-width: 250px;
-    text-align: center;
-    padding: 0;
-    vertical-align: bottom;
-    position: relative;
-    top: 40px;
-}
-
-.ford2 {
-    max-width: 250px;
-    vertical-align: top;
-    position: relative;
-    bottom: 40px;
+    padding: 20px 30px;
 }
 
 .location {
     text-align: right;
     padding-right: 33px;
     font-weight: 700;
-    max-width: 250px;
+
+}
+
+.ford {
+    max-width: 100%;
+
+    img {
+        position: relative;
+        vertical-align: bottom;
+        top: 40px;
+    }
+}
+
+.ford2 {
+    max-width: 100%;
+
+    img {
+        position: relative;
+        vertical-align: top;
+        bottom: 40px;
+    }
 }
 
 table {
@@ -69,7 +72,7 @@ table {
 }
 
 .banner {
-    background-image: url("banner.png");
+    background-image: url("https://i.imgur.com/8vAYc1z.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -93,6 +96,7 @@ p, h2 {
 }
 
 .gear-img, .car-img {
+    max-width: 100%;
     position: relative;
     z-index: 1;
 }
@@ -104,16 +108,6 @@ p, h2 {
     vertical-align: top;
 }
 
-.rectangle {
-    min-width: 450px;
-    max-width: 450px;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    z-index: 2;
-}
-
 .right-section {
     background-color: $primarycolor;
     width: 50%;
@@ -122,11 +116,15 @@ p, h2 {
 }
 
 .ford-pass {
-   background-image: url("fordpass.png");
+   background-image: url("https://i.imgur.com/bqgrkO4.png");
    background-color: #355e81;
    color: #fff;
    text-transform: uppercase;
    max-width: 100%;
+}
+
+.fordpass a {
+    color: #fff;
 }
 
 .heritage p {
@@ -134,25 +132,12 @@ p, h2 {
 }
 
 .showroom {
-    background-image: url("showroom.png");
+    background-image: url("https://i.imgur.com/Jb7Tvqi.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 359px;
     color: #fff;
 }
-
-
-.rectangle2 {
-    min-width: 450px;
-    max-width: 450px;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    padding: 0 220px;
-    z-index: 2;
-}
-
 
 .footer {
     font-size: 14px;
@@ -161,8 +146,18 @@ p, h2 {
     padding: 20px;
 }
 
+.social-icons {
+    padding: 0;
+}
+
 ul.social-icons li {
     list-style-type: none;
     display: inline-block;
     padding: 20px;
+}
+
+@media screen and (min-width: 300px) {
+    .ford-pass h1 {
+font-size: 30px;
+    }
 }
