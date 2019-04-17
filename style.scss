@@ -3,6 +3,7 @@ $blackcolor: #1b1c1e;
 
 body {
     margin: 0;
+    background-color: $blackcolor;
 }
 
 .email-background {
@@ -11,28 +12,49 @@ body {
 }
 
 .email-container {
-    max-width: 600px;
+    width: 900px;
     color: $blackcolor;
     background-color: #fff;
     height: auto;
     margin: 0 auto;
     overflow: hidden;
-    font-family: helvetica;
-    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
     line-height: 1.5;
+    text-align: center;
 }
 
 .header {
     background-color: #fff;
-    padding: 10px 20px;
 }
 
 .logo {
     text-align: left;
+    padding-left: 30px;
+    max-width: 250px;
+}
+
+.ford {
+    max-width: 250px;
+    text-align: center;
+    padding: 0;
+    vertical-align: bottom;
+    position: relative;
+    top: 40px;
+}
+
+.ford2 {
+    max-width: 250px;
+    vertical-align: top;
+    position: relative;
+    bottom: 40px;
 }
 
 .location {
     text-align: right;
+    padding-right: 33px;
+    font-weight: 700;
+    max-width: 250px;
 }
 
 table {
@@ -42,49 +64,105 @@ table {
     
 }
 
-.banner {
+.divider {
     background-color: $primarycolor;
-    height: 200px;
-    color: #fff;
 }
 
-.banner h1 {
-    padding: 0px 100px;
+.banner {
+    background-image: url("banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: $primarycolor;
+    height: 356px;
+    color: #fff;
+
+    h1 {
+        font-size: 39px;
+        font-weight: 700;
+        padding: 100px;
+    }
 }
 
 .main {
     height: auto;
     text-align: left;
+p, h2 {
+    padding: 10px 20px;
+}
+}
+
+.gear-img, .car-img {
+    position: relative;
+    z-index: 1;
 }
 
 .left-section {
     background-color: $blackcolor;
     width: 50%;
     color: white;
-    padding: 20px;
+    vertical-align: top;
+}
+
+.rectangle {
+    min-width: 450px;
+    max-width: 450px;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    z-index: 2;
 }
 
 .right-section {
     background-color: $primarycolor;
     width: 50%;
     color: white;
-    padding: 20px;
+    vertical-align: top;
 }
 
 .ford-pass {
+   background-image: url("fordpass.png");
    background-color: #355e81;
    color: #fff;
    text-transform: uppercase;
+   max-width: 100%;
 }
 
 .heritage p {
     padding: 10px 30px;
 }
 
+.showroom {
+    background-image: url("/showroom.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 359px;
+    color: #fff;
+}
+
+
+.rectangle2 {
+    min-width: 450px;
+    max-width: 450px;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    padding: 0 220px;
+    z-index: 2;
+}
+
+
 .footer {
-    font-size: 12px;
+    font-size: 14px;
     background-color: $blackcolor;
     color: #fff;
     padding: 20px;
 }
 
+ul.social-icons li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px;
+}
