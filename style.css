@@ -23,7 +23,11 @@ body {
 
 .logo {
   text-align: left;
-  padding: 20px 30px; }
+  padding: 20px 0px 0px 10px; }
+
+.logo2 {
+  text-align: left;
+  padding: 0px 20px 0px 10px; }
 
 .location {
   text-align: right;
@@ -31,18 +35,18 @@ body {
   font-weight: 700; }
 
 .ford {
-  max-width: 100%; }
+  max-width: 100%;
+  position: relative;
+  top: 40px; }
   .ford img {
-    position: relative;
-    vertical-align: bottom;
-    top: 40px; }
+    vertical-align: bottom; }
 
 .ford2 {
-  max-width: 100%; }
+  max-width: 100%;
+  position: relative;
+  bottom: 40px; }
   .ford2 img {
-    position: relative;
-    vertical-align: top;
-    bottom: 40px; }
+    vertical-align: top; }
 
 table {
   width: 100%;
@@ -61,9 +65,7 @@ table {
   height: 356px;
   color: #fff; }
   .banner h1 {
-    font-size: 39px;
-    font-weight: 700;
-    padding: 100px; }
+    font-weight: 700; }
 
 .main {
   height: auto;
@@ -122,8 +124,25 @@ ul.social-icons li {
   display: inline-block;
   padding: 20px; }
 
-@media screen and (min-width: 300px) {
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+  p, li {
+    font-size: 14px; }
+
+  h1 {
+    font-size: 30px;
+    padding: 0; }
+
+  h2 {
+    font-size: 20px; }
+
   .ford-pass h1 {
-    font-size: 30px; } }
+    font-size: 20px; }
+
+  .logo img {
+    padding: 10px;
+    margin: 0; }
+
+  .location {
+    text-align: center; } }
 
 
