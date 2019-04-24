@@ -120,6 +120,8 @@ p, h2 {
 .ford-pass {
    background-image: url("https://i.imgur.com/bqgrkO4.png");
    background-color: #355e81;
+   background-repeat: no-repeat;
+   background-size: 100%;
    color: #fff;
    text-transform: uppercase;
    max-width: 100%;
@@ -136,7 +138,7 @@ p, h2 {
 .showroom {
     background-image: url("https://i.imgur.com/zUPv8DJ.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     height: 359px;
     color: #fff;
 }
@@ -158,30 +160,76 @@ ul.social-icons li {
     padding: 20px;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 600px) {
-    p, li {
-        font-size: 14px;
-    }
-
-    h1 {
-        font-size: 30px;
-        padding: 0;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    .ford-pass h1 {
-        font-size: 20px;
-    }
-
-    .logo img {
-        padding: 10px;
-        margin: 0;
-    }
-
-    .location {
-        text-align: center;
-    }
+.mobile-header, .mobile-main {
+    display: none;
 }
+
+@media only screen and (max-width: 600px) {
+
+    .main {
+        display: none;
+    }
+
+    .mobile-main {
+        display: block;
+        text-align: left;
+    }
+
+    .gear {
+        width: 100%;
+        background-image: url("https://i.imgur.com/97P4zD6.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: $primarycolor;
+        height: 170px;
+    }
+
+    .car {
+        @extend .gear;
+        background-image: url("https://i.imgur.com/27VKFWh.png");
+    }
+
+    td.left-section {
+        padding: 10px;
+    }
+
+    td.right-section {
+        padding: 10px;
+    }
+
+    .email-container {
+        width: 100%;
+    }
+
+   .header {
+       display: none;
+   }
+
+   .mobile-header {
+       display: block;
+       width: 100%;
+       img {
+           width: 100%;
+       }
+   }
+   .ford-pass {
+       background-image: url("https://i.imgur.com/pjTeaZI.png");
+       max-width: 600px;
+       background-size: 100%;
+       h1 {
+           font-size: 30px;
+       }
+       
+   }
+   .showroom {
+       height: 200px !important;
+       h1 {
+           font-size: 20px;
+       }
+       h2 {
+           font-size: 15px;
+       }
+       p {
+           font-size: 12px;
+       }
+   }  }
